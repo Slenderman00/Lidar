@@ -14,8 +14,8 @@
     )
     (symbol "LC8805B-1515_1_1"
       (rectangle (start -5.08 0) (end 5.08 -5.08)
-        (stroke (width 0) (type default) (color 0 0 0 1))
-        (fill (type color) (color 255 255 194 1))
+        (stroke (width 0) (type default) (color 132 0 0 1))
+        (fill (type background))
       )
       (text "LC8805B-1515" (at 0 0.8905 0)
         (effects (font (size 1.27 1.27)))
