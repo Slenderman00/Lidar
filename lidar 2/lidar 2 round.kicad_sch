@@ -393,6 +393,45 @@
         )
       )
     )
+    (symbol "LC8805:LC8805B-1515" (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 0 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "led:LC8805B-1515" (at 0 2.54 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "LC8805B-1515_1_1"
+        (rectangle (start -5.08 0) (end 5.08 -5.08)
+          (stroke (width 0) (type default) (color 132 0 0 1))
+          (fill (type background))
+        )
+        (text "LC8805B-1515" (at 0 0.8905 0)
+          (effects (font (size 1.27 1.27)))
+        )
+        (pin input line (at -7.62 -3.81 0) (length 2.54)
+          (name "DIN" (effects (font (size 1.27 1.27))))
+          (number "" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at 7.62 -1.27 180) (length 2.54)
+          (name "DOUT" (effects (font (size 1.27 1.27))))
+          (number "" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at -7.62 -1.27 0) (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at 7.62 -3.81 180) (length 2.54)
+          (name "VDD" (effects (font (size 1.27 1.27))))
+          (number "" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "PCM_Espressif:ESP32-S3-MINI-1" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -43.18 43.18 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -966,35 +1005,35 @@
         )
       )
     )
-    (symbol "Regulator_Linear:LM1117DT-3.3" (in_bom yes) (on_board yes)
+    (symbol "Regulator_Linear:AMS1117-3.3" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -3.81 3.175 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "LM1117DT-3.3" (at 0 3.175 0)
+      (property "Value" "AMS1117-3.3" (at 0 3.175 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Footprint" "Package_TO_SOT_SMD:TO-252-3_TabPin2" (at 0 0 0)
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 0 5.08 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1117.pdf" (at 0 0 0)
+      (property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf" (at 2.54 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_keywords" "linear regulator ldo fixed positive" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "800mA Low-Dropout Linear Regulator, 3.3V fixed output, TO-252" (at 0 0 0)
+      (property "ki_description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "TO?252*" (at 0 0 0)
+      (property "ki_fp_filters" "SOT?223*TabPin2*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "LM1117DT-3.3_0_1"
+      (symbol "AMS1117-3.3_0_1"
         (rectangle (start -5.08 -5.08) (end 5.08 1.905)
           (stroke (width 0.254) (type default))
           (fill (type background))
         )
       )
-      (symbol "LM1117DT-3.3_1_1"
+      (symbol "AMS1117-3.3_1_1"
         (pin power_in line (at 0 -7.62 90) (length 2.54)
           (name "GND" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -1009,35 +1048,35 @@
         )
       )
     )
-    (symbol "Regulator_Linear:LM1117S-5.0" (in_bom yes) (on_board yes)
+    (symbol "Regulator_Linear:AMS1117-5.0" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -3.81 3.175 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "LM1117S-5.0" (at 0 3.175 0)
+      (property "Value" "AMS1117-5.0" (at 0 3.175 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Footprint" "Package_TO_SOT_SMD:TO-263-3_TabPin2" (at 0 0 0)
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 0 5.08 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1117.pdf" (at 0 0 0)
+      (property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf" (at 2.54 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_keywords" "linear regulator ldo fixed positive" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "800mA Low-Dropout Linear Regulator, 5.0V fixed output, TO-263" (at 0 0 0)
+      (property "ki_description" "1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "TO?263*" (at 0 0 0)
+      (property "ki_fp_filters" "SOT?223*TabPin2*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "LM1117S-5.0_0_1"
+      (symbol "AMS1117-5.0_0_1"
         (rectangle (start -5.08 -5.08) (end 5.08 1.905)
           (stroke (width 0.254) (type default))
           (fill (type background))
         )
       )
-      (symbol "LM1117S-5.0_1_1"
+      (symbol "AMS1117-5.0_1_1"
         (pin power_in line (at 0 -7.62 90) (length 2.54)
           (name "GND" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -1143,62 +1182,6 @@
         )
         (pin passive line (at 5.08 0 180) (length 2.54)
           (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Switch:SW_Push_Open" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "SW" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "SW_Push_Open" (at 0 -1.905 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "switch normally-closed pushbutton push-button" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Push button switch, push-to-open, generic, two pins" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SW_Push_Open_0_1"
-        (circle (center -2.032 0) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.54 -0.635)
-            (xy 2.54 -0.635)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -0.635)
-            (xy 0 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 2.032 0) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (pin passive line (at -5.08 0 0) (length 2.54)
-          (name "A" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-      (symbol "SW_Push_Open_1_1"
-        (pin passive line (at 5.08 0 180) (length 2.54)
-          (name "B" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
       )
@@ -1514,6 +1497,9 @@
   (junction (at 71.12 73.66) (diameter 0) (color 0 0 0 0)
     (uuid 59233f7f-0a72-494e-8e89-3fe6010f1ad7)
   )
+  (junction (at 262.89 121.92) (diameter 0) (color 0 0 0 0)
+    (uuid 7897a719-ee78-4748-ae57-32dd059188e5)
+  )
   (junction (at 110.49 113.03) (diameter 0) (color 0 0 0 0)
     (uuid 8033b467-7fa1-4745-bdb6-87715557ee05)
   )
@@ -1736,18 +1722,25 @@
     (uuid 83951a47-33dd-45e5-8cb1-78a4f93aeab7)
   )
   (text_box "ESP32"
-    (at 144.78 38.1 0) (size 125.73 96.52)
+    (at 144.78 38.1 0) (size 135.89 96.52)
     (stroke (width 0) (type default))
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid 974fa1b0-ee3c-4ee4-a5de-4fbae6367265)
   )
   (text_box "Voltage IN"
-    (at 67.31 128.27 0) (size 12.7 17.78)
+    (at 66.04 128.27 0) (size 12.7 17.78)
     (stroke (width 0) (type default))
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid d72630df-4e53-4023-a8b1-a440619a09a3)
+  )
+  (text_box "Status LED"
+    (at 81.28 128.27 0) (size 39.37 17.78)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid eb6d6e8e-07a9-4f3a-9683-fcbafbad8e70)
   )
   (text_box "Motor Controller\n"
     (at 20.32 100.33 0) (size 49.53 25.4)
@@ -1755,6 +1748,11 @@
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid f88c3756-0c81-4c36-8d11-e52493d67e7f)
+  )
+
+  (text "Figure out resistance" (at 259.08 114.3 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 6edf343b-f0fa-4219-a8c4-5b6ad88cac01)
   )
 
   (label "12{slash}16{slash}23" (at 207.01 194.31 0) (fields_autoplaced)
@@ -1777,6 +1775,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "SLED" (shape input) (at 166.37 76.2 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 134e6242-d96d-4292-a4bb-0ae16c402579)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 158.7282 76.2 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "SDA" (shape input) (at 45.72 88.9 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 142b7d65-a96d-4324-9261-67da2ba044d4)
@@ -1791,10 +1796,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "VIN" (shape input) (at 71.12 138.43 270) (fields_autoplaced)
+  (global_label "VIN" (shape input) (at 69.85 138.43 270) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 1768144d-8975-4962-ba38-16cbc851b975)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 71.12 144.4391 90)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 69.85 144.4391 90)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1838,6 +1843,13 @@
     (uuid 354510d4-78bc-44da-91f6-946ca45b92bd)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 90.615 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "SLED" (shape input) (at 93.98 140.97 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 394e55f8-100d-4319-9676-748493e995ea)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 86.3382 140.97 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
   (global_label "D-" (shape input) (at 128.27 62.23 0) (fields_autoplaced)
@@ -2012,7 +2024,7 @@
   (symbol (lib_id "power:GND") (at 71.12 78.74 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 01d7ed77-1490-4bb7-9e58-02899629362e)
-    (property "Reference" "#PWR06" (at 77.47 78.74 0)
+    (property "Reference" "#PWR?" (at 77.47 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 74.93 78.74 90)
@@ -2028,10 +2040,10 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
           (reference "#PWR013") (unit 1)
         )
@@ -2042,7 +2054,7 @@
   (symbol (lib_id "power:+3.3V") (at 31.75 134.62 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 042e4cd3-7e56-44b4-86a7-4969a856fe76)
-    (property "Reference" "#PWR022" (at 35.56 134.62 0)
+    (property "Reference" "#PWR03" (at 35.56 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 27.94 134.62 90)
@@ -2056,9 +2068,9 @@
     )
     (pin "1" (uuid 18e232ea-dc75-44d9-95b1-9bd66dd4bf33))
     (instances
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -2082,7 +2094,7 @@
     (pin "1" (uuid 533d151c-07c3-49b5-9682-3afe97fbc961))
     (pin "2" (uuid 3a521988-707e-45fe-835c-ace95355732d))
     (instances
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
           (reference "C1") (unit 1)
         )
@@ -2093,13 +2105,13 @@
   (symbol (lib_id "Switch:SW_Push") (at 153.67 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 13cc1980-b468-4143-938d-e8eb575187c4)
-    (property "Reference" "SW1" (at 153.67 100.33 0)
+    (property "Reference" "SW?" (at 153.67 100.33 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "BOOT" (at 153.67 102.87 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" (at 153.67 101.6 0)
+    (property "Footprint" "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" (at 153.67 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 101.6 0)
@@ -2110,10 +2122,10 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "SW1") (unit 1)
+          (reference "SW?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
           (reference "SW1") (unit 1)
         )
@@ -2124,7 +2136,7 @@
   (symbol (lib_id "power:GND") (at 212.09 45.72 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 240e7785-50e4-4f1e-acd6-7960e29902ec)
-    (property "Reference" "#PWR011" (at 212.09 39.37 0)
+    (property "Reference" "#PWR?" (at 212.09 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 212.09 40.64 0)
@@ -2140,12 +2152,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -2154,7 +2166,7 @@
   (symbol (lib_id "PCM_SL_Pin_Headers:PINHD_1x4_Male") (at 54.61 138.43 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 24f91cad-afd1-4ff4-ab2b-05c7b0f90fea)
-    (property "Reference" "J4" (at 57.15 137.16 0)
+    (property "Reference" "J3" (at 57.15 137.16 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "JTAG" (at 57.15 139.7 0)
@@ -2171,9 +2183,9 @@
     (pin "1" (uuid db0e82c0-d98f-4514-9474-022341240ce7))
     (pin "4" (uuid fc9c3386-da55-46f6-9f9e-e552de33a33e))
     (instances
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "J4") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -2182,7 +2194,7 @@
   (symbol (lib_id "power:GND") (at 39.37 78.74 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 266efcf7-2897-469b-8cd2-a7476f7965ce)
-    (property "Reference" "#PWR06" (at 33.02 78.74 0)
+    (property "Reference" "#PWR?" (at 33.02 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 35.56 78.74 90)
@@ -2198,12 +2210,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -2212,7 +2224,7 @@
   (symbol (lib_id "Sensor_Magnetic:DRV5055A2xDBZxQ1") (at 97.79 115.57 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 283cd27a-4e79-44c4-b736-5005bdd3d166)
-    (property "Reference" "U6" (at 97.79 105.41 90)
+    (property "Reference" "U4" (at 97.79 105.41 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "DRV5055A2xDBZxQ1" (at 97.79 107.95 90)
@@ -2228,9 +2240,9 @@
     (pin "1" (uuid 2b51941a-fa6d-4eaa-86c9-39789f2e1d7e))
     (pin "3" (uuid b3df6818-361c-4965-87e8-51fd6365f330))
     (instances
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "U6") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
     )
@@ -2239,7 +2251,7 @@
   (symbol (lib_id "power:GND") (at 34.29 54.61 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2c373994-6afe-498e-b8a6-02bca2763722)
-    (property "Reference" "#PWR06" (at 27.94 54.61 0)
+    (property "Reference" "#PWR?" (at 27.94 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 30.48 54.61 90)
@@ -2255,12 +2267,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -2269,7 +2281,7 @@
   (symbol (lib_id "power:+5V") (at 82.55 46.99 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 33c34113-8dd1-4de2-bdab-efd930d677f0)
-    (property "Reference" "#PWR09" (at 78.74 46.99 0)
+    (property "Reference" "#PWR?" (at 78.74 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 86.36 46.99 90)
@@ -2285,12 +2297,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -2299,7 +2311,7 @@
   (symbol (lib_id "Transistor_BJT:BC847") (at 39.37 114.3 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 37e9ac46-1b0e-4f4b-be84-78b824c64d1a)
-    (property "Reference" "Q2" (at 39.37 105.41 90)
+    (property "Reference" "Q1" (at 39.37 105.41 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "BC847" (at 39.37 107.95 90)
@@ -2315,9 +2327,9 @@
     (pin "1" (uuid f769041b-1763-4ce3-b345-ff1e09de87a0))
     (pin "3" (uuid 16d90fa7-58d3-47cc-a6af-ffdaa3aff7f0))
     (instances
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "Q2") (unit 1)
+          (reference "Q1") (unit 1)
         )
       )
     )
@@ -2341,7 +2353,7 @@
     (pin "1" (uuid 76cacece-ed40-457a-8372-a299b293489d))
     (pin "2" (uuid 5d9eb6b1-04fa-45c7-978c-3472293daeaa))
     (instances
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
           (reference "C4") (unit 1)
         )
@@ -2352,7 +2364,7 @@
   (symbol (lib_id "power:GND") (at 148.59 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3ca362ce-6f70-4b1b-8f39-f75f42dd6829)
-    (property "Reference" "#PWR014" (at 148.59 113.03 0)
+    (property "Reference" "#PWR?" (at 148.59 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 148.59 111.76 0)
@@ -2368,12 +2380,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -2397,7 +2409,7 @@
     (pin "1" (uuid e3517028-3669-492a-9bd6-e39b9408712e))
     (pin "2" (uuid 95ceb524-4786-48bb-a8a4-ce0eb4ad75ad))
     (instances
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
           (reference "C2") (unit 1)
         )
@@ -2408,7 +2420,7 @@
   (symbol (lib_id "power:GND") (at 45.72 83.82 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3fc34aab-cfa4-41aa-abe1-292a2989efe0)
-    (property "Reference" "#PWR06" (at 39.37 83.82 0)
+    (property "Reference" "#PWR?" (at 39.37 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 41.91 83.82 90)
@@ -2424,12 +2436,43 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR08") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_Small") (at 262.89 124.46 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 4553793d-1950-4fe5-b863-5489d42d11a6)
+    (property "Reference" "R?" (at 262.89 124.46 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1 Mohm" (at 262.89 119.38 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 262.89 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 262.89 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 91a9d40c-5de9-4c42-b1d1-fd03ae400efb))
+    (pin "1" (uuid b793c3e1-f918-4d01-b6ad-1282e04aaf0b))
+    (instances
+      (project "lidar"
+        (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
+          (reference "R?") (unit 1)
+        )
+      )
+      (project "lidar 2 round"
+        (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -2438,7 +2481,7 @@
   (symbol (lib_id "power:+5V") (at 59.69 111.76 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4aec8361-4a83-4d9b-8ee8-fd39b9af0c9d)
-    (property "Reference" "#PWR04" (at 55.88 111.76 0)
+    (property "Reference" "#PWR?" (at 55.88 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 63.5 111.76 90)
@@ -2454,12 +2497,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -2468,7 +2511,7 @@
   (symbol (lib_id "power:GND") (at 107.95 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4d31d6d4-5bd5-41a2-ae51-e31c58ff5344)
-    (property "Reference" "#PWR013" (at 107.95 92.71 0)
+    (property "Reference" "#PWR?" (at 107.95 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 107.95 91.44 0)
@@ -2484,12 +2527,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -2498,7 +2541,7 @@
   (symbol (lib_id "power:+3.3V") (at 111.76 113.03 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 54f38b9f-66c1-42a1-ab2d-c7cdf921008f)
-    (property "Reference" "#PWR08" (at 107.95 113.03 0)
+    (property "Reference" "#PWR?" (at 107.95 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 115.57 113.03 90)
@@ -2514,10 +2557,10 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
           (reference "#PWR021") (unit 1)
         )
@@ -2528,7 +2571,7 @@
   (symbol (lib_id "Diode:MBR0520") (at 130.81 48.26 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 572aa9e4-13b9-4a8f-8b41-50f2494f42aa)
-    (property "Reference" "D1" (at 131.1275 41.91 0)
+    (property "Reference" "D?" (at 131.1275 41.91 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MBR0520" (at 131.1275 44.45 0)
@@ -2545,10 +2588,10 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "D1") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
           (reference "D1") (unit 1)
         )
@@ -2556,32 +2599,59 @@
     )
   )
 
-  (symbol (lib_id "Switch:SW_Push_Open") (at 262.89 121.92 0) (unit 1)
+  (symbol (lib_id "power:+3.3V") (at 109.22 140.97 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 65f1e589-ff39-4b5d-89b0-a01068e8e0f3)
-    (property "Reference" "SW2" (at 262.89 115.57 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "RESET" (at 262.89 118.11 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" (at 262.89 116.84 0)
+    (uuid 5ef78246-fed3-4e28-b16c-1f8c1ba5b594)
+    (property "Reference" "#PWR?" (at 105.41 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 262.89 116.84 0)
+    (property "Value" "+3.3V" (at 113.03 140.97 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 109.22 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 7d178442-a669-4ab4-94cb-46256f44edd1))
-    (pin "1" (uuid 8177b73c-8359-4486-8e6e-2f51bee17dcf))
+    (property "Datasheet" "" (at 109.22 140.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ecc0a0ef-6e0b-4c04-a9be-20043270ce7f))
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "SW2") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "SW2") (unit 1)
+          (reference "#PWR028") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "LC8805:LC8805B-1515") (at 101.6 137.16 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 6150e271-c7ca-4d69-8fff-4fafe044c39b)
+    (property "Reference" "U3" (at 101.6 133.35 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "~" (at 101.6 137.16 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "led:LC8805B-1515" (at 101.6 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 101.6 137.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "" (uuid e7e87e0f-07c6-4b01-a04a-e3510a377d43))
+    (pin "" (uuid 6f01b8b9-c424-4afc-827c-5b0d490d186d))
+    (pin "" (uuid d9f57c64-4cae-468a-bb9b-635462b5e12a))
+    (pin "" (uuid 67b35bc0-36b3-47f1-a9a3-a5972d9baf2a))
+    (instances
+      (project "lidar 2 round"
+        (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -2590,7 +2660,7 @@
   (symbol (lib_id "power:+3.3V") (at 39.37 73.66 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 76cb6095-bb31-4b92-b979-5a31056127d0)
-    (property "Reference" "#PWR08" (at 43.18 73.66 0)
+    (property "Reference" "#PWR?" (at 43.18 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 35.56 73.66 90)
@@ -2606,12 +2676,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -2620,7 +2690,7 @@
   (symbol (lib_id "power:+3.3V") (at 71.12 73.66 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 77c98cd8-18e6-48dc-863c-c952b4e1d7b5)
-    (property "Reference" "#PWR08" (at 67.31 73.66 0)
+    (property "Reference" "#PWR?" (at 67.31 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 74.93 73.66 90)
@@ -2636,44 +2706,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR09") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Regulator_Linear:LM1117DT-3.3") (at 40.64 46.99 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 789b8e3a-5510-48cb-8705-00b0dcd624ef)
-    (property "Reference" "U1" (at 40.64 40.64 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LM1117DT-3.3" (at 40.64 43.18 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:TO-252-3_TabPin2" (at 40.64 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1117.pdf" (at 40.64 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ba97a7b1-3c2a-4e62-b693-431c3eedfc32))
-    (pin "2" (uuid fd577296-2eeb-4839-949e-c3465be23f74))
-    (pin "3" (uuid b794e1b6-bca4-4ebf-8458-33f34c46391f))
-    (instances
-      (project "lidar"
-        (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "U1") (unit 1)
-        )
-      )
-      (project "lidar 2"
-        (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "U1") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -2697,7 +2735,7 @@
     (pin "1" (uuid 9942d556-3024-4342-b1a9-a865d2c3303c))
     (pin "2" (uuid 37a3be11-70ed-45e8-bd49-c6f9a6409af9))
     (instances
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
           (reference "C3") (unit 1)
         )
@@ -2705,31 +2743,61 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 73.66 138.43 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 273.05 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 7f293fa9-bf3f-4b05-bf8d-83c2a73c6bfd)
-    (property "Reference" "#PWR07" (at 73.66 144.78 0)
+    (uuid 7c77319a-4fa9-46e8-be9d-133333eb85f3)
+    (property "Reference" "#PWR?" (at 273.05 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 73.66 143.51 0)
+    (property "Value" "GND" (at 273.05 127 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 73.66 138.43 0)
+    (property "Footprint" "" (at 273.05 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 73.66 138.43 0)
+    (property "Datasheet" "" (at 273.05 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f37b708f-f3cc-4db6-a981-cf62afe9340f))
+    (instances
+      (project "lidar"
+        (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
+          (reference "#PWR?") (unit 1)
+        )
+      )
+      (project "lidar 2 round"
+        (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
+          (reference "#PWR026") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 72.39 138.43 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 7f293fa9-bf3f-4b05-bf8d-83c2a73c6bfd)
+    (property "Reference" "#PWR?" (at 72.39 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 72.39 143.51 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 72.39 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 72.39 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 4fe058db-60f8-4d2b-b094-fc3831feb73b))
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -2738,7 +2806,7 @@
   (symbol (lib_id "PCM_Espressif:ESP32-S3-MINI-1") (at 212.09 86.36 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 85c9cee0-4107-49b4-ac87-fc37680651da)
-    (property "Reference" "U3" (at 212.4359 43.18 0)
+    (property "Reference" "U?" (at 212.4359 43.18 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "ESP32-S3-MINI-1" (at 212.4359 45.72 0)
@@ -2818,12 +2886,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "U3") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "U3") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -2832,7 +2900,7 @@
   (symbol (lib_id "power:GND") (at 31.75 120.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8bde8c1f-7dfa-4f90-aa99-028e70c7435c)
-    (property "Reference" "#PWR05" (at 25.4 120.65 0)
+    (property "Reference" "#PWR?" (at 25.4 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 27.94 120.65 90)
@@ -2848,12 +2916,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -2862,7 +2930,7 @@
   (symbol (lib_id "power:GND") (at 71.12 91.44 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8beae9da-35b0-4235-9018-85784693edb2)
-    (property "Reference" "#PWR06" (at 77.47 91.44 0)
+    (property "Reference" "#PWR?" (at 77.47 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 74.93 91.44 90)
@@ -2878,12 +2946,100 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR015") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 267.97 121.92 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 8e984501-1365-4750-85f2-6d3329c815b2)
+    (property "Reference" "SW?" (at 267.97 115.57 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "RESET" (at 267.97 118.11 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" (at 267.97 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 267.97 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid a10a0d3a-d264-4ff8-9069-47d6e27ccdfb))
+    (pin "1" (uuid 10e35242-615d-442f-8f04-91450ed05d76))
+    (instances
+      (project "lidar"
+        (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
+          (reference "SW?") (unit 1)
+        )
+      )
+      (project "lidar 2 round"
+        (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
+          (reference "SW2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Regulator_Linear:AMS1117-3.3") (at 40.64 46.99 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 92058bd1-fd20-421f-9559-b96f73bfd48f)
+    (property "Reference" "U6" (at 40.64 40.64 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "AMS1117-3.3" (at 40.64 43.18 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 40.64 41.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf" (at 43.18 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 23c38b6d-489a-4ea9-ae02-d89af54eb709))
+    (pin "1" (uuid c7702e53-309a-480d-979a-bdf9f71ea9a2))
+    (pin "3" (uuid 50fc97bf-3244-40a4-8da5-32d2d1cc3337))
+    (instances
+      (project "lidar 2 round"
+        (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
+          (reference "U6") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 93.98 138.43 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 978724aa-0b1d-4bd0-8f79-af06cea12c2a)
+    (property "Reference" "#PWR?" (at 87.63 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 90.17 138.43 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 93.98 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 93.98 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid dca0573e-731d-45f3-95e9-ffb7626bc118))
+    (instances
+      (project "lidar"
+        (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
+          (reference "#PWR?") (unit 1)
+        )
+      )
+      (project "lidar 2 round"
+        (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -2892,7 +3048,7 @@
   (symbol (lib_id "power:+3.3V") (at 212.09 127 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a68835b2-e6ec-40b7-b42e-6cc957edf30e)
-    (property "Reference" "#PWR010" (at 212.09 123.19 0)
+    (property "Reference" "#PWR?" (at 212.09 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 212.09 132.08 0)
@@ -2908,12 +3064,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -2922,7 +3078,7 @@
   (symbol (lib_id "PCM_SL_Pin_Headers:PINHD_1x4_Male") (at 35.56 138.43 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a90ad5d1-a5b2-44d4-96e8-32704ad57b7f)
-    (property "Reference" "J3" (at 38.1 137.16 0)
+    (property "Reference" "J1" (at 38.1 137.16 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "UART" (at 38.1 139.7 0)
@@ -2939,9 +3095,9 @@
     (pin "1" (uuid 503c9568-f190-41d4-b7fc-ed4ca172b33f))
     (pin "4" (uuid 778d4e10-a14f-42d5-b75e-66f5aacf9449))
     (instances
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "J3") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -2950,7 +3106,7 @@
   (symbol (lib_id "power:+3.3V") (at 48.26 46.99 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b743f509-0b46-46d6-ad83-28403c3a7e09)
-    (property "Reference" "#PWR08" (at 44.45 46.99 0)
+    (property "Reference" "#PWR?" (at 44.45 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 52.07 46.99 90)
@@ -2966,12 +3122,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -2980,7 +3136,7 @@
   (symbol (lib_id "ToF:TMF8805") (at 54.61 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c0bafada-54e4-48fb-a196-720610f9216a)
-    (property "Reference" "U4" (at 54.61 69.85 0)
+    (property "Reference" "U2" (at 54.61 69.85 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "~" (at 53.34 74.93 0)
@@ -3005,35 +3161,62 @@
     (pin "11" (uuid 456ec50a-e015-40c5-8128-92812f7a0723))
     (pin "1" (uuid 788e48c8-a1b1-472a-8d3c-2258512fd5c6))
     (instances
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "U4") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "PCM_SL_Pin_Headers:PINHD_1x2_Female") (at 72.39 134.62 90) (unit 1)
+  (symbol (lib_id "PCM_SL_Pin_Headers:PINHD_1x2_Female") (at 71.12 134.62 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c37863af-d6de-45c4-a029-c8292b514136)
-    (property "Reference" "J5" (at 76.2 133.095 90)
+    (property "Reference" "J4" (at 74.93 133.095 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "VIN" (at 76.2 135.635 90)
+    (property "Value" "VIN" (at 74.93 135.635 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" (at 62.23 132.08 0)
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" (at 60.96 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 64.77 134.62 0)
+    (property "Datasheet" "" (at 63.5 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "2" (uuid 2f4f1075-c97d-452b-9bd5-616bfcb3dff2))
     (pin "1" (uuid 4a22237d-aefa-4501-ab66-af79d1a63ff2))
     (instances
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "J5") (unit 1)
+          (reference "J4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Regulator_Linear:AMS1117-5.0") (at 74.93 46.99 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid c92a323b-eebc-47cd-b670-837f74829ad7)
+    (property "Reference" "U1" (at 74.93 40.64 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "AMS1117-5.0" (at 74.93 43.18 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 74.93 41.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf" (at 77.47 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 7cfbbe15-c12a-44e7-a8c3-7962e79a93fc))
+    (pin "3" (uuid f0ef1d89-d24f-4572-b66c-31021e852d4c))
+    (pin "1" (uuid a27ac621-4c92-4c11-8431-107a9f747c6b))
+    (instances
+      (project "lidar 2 round"
+        (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
+          (reference "U1") (unit 1)
         )
       )
     )
@@ -3042,7 +3225,7 @@
   (symbol (lib_id "power:GND") (at 31.75 111.76 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d03a80c1-c67b-4e18-8c40-7397a32bdaca)
-    (property "Reference" "#PWR03" (at 25.4 111.76 0)
+    (property "Reference" "#PWR?" (at 25.4 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 27.94 111.76 90)
@@ -3058,12 +3241,43 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR01") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_Small") (at 260.35 121.92 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid d3f7bebb-47fd-4763-ab78-1044a636a033)
+    (property "Reference" "R?" (at 260.35 121.92 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1 Mohm" (at 255.27 121.92 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 260.35 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 260.35 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 84399bf6-e34f-4b36-b719-13250cafaa1a))
+    (pin "1" (uuid b52b0e5a-4bb8-42c3-a4cc-95c28cef66dc))
+    (instances
+      (project "lidar"
+        (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
+          (reference "R?") (unit 1)
+        )
+      )
+      (project "lidar 2 round"
+        (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -3087,41 +3301,9 @@
     (pin "2" (uuid 5ad91be8-4c47-43a0-9089-d9ac38f98e04))
     (pin "1" (uuid 54a67aba-0585-4b51-918c-6845c98dd1e5))
     (instances
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
           (reference "J2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Regulator_Linear:LM1117S-5.0") (at 74.93 46.99 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d5157143-9e94-4ce3-a1e8-d5adf32a7573)
-    (property "Reference" "U2" (at 74.93 40.64 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LM1117S-5.0" (at 74.93 43.18 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:TO-263-3_TabPin2" (at 74.93 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1117.pdf" (at 74.93 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7e04632c-5083-4a4f-890a-0fe341af7d63))
-    (pin "3" (uuid d0c898de-16cc-421f-b374-9c75c66ea9c5))
-    (pin "2" (uuid 5ee5cc19-73d7-49ab-b984-56752be2eb53))
-    (instances
-      (project "lidar"
-        (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "U2") (unit 1)
-        )
-      )
-      (project "lidar 2"
-        (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "U2") (unit 1)
         )
       )
     )
@@ -3130,7 +3312,7 @@
   (symbol (lib_id "power:GND") (at 31.75 142.24 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d83cc229-5e3f-4b0a-8c20-d9a10c7ecb0c)
-    (property "Reference" "#PWR024" (at 25.4 142.24 0)
+    (property "Reference" "#PWR04" (at 25.4 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 27.94 142.24 90)
@@ -3144,9 +3326,9 @@
     )
     (pin "1" (uuid 674b5b39-f7ed-48df-9de5-80b08e5f056a))
     (instances
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -3155,7 +3337,7 @@
   (symbol (lib_id "power:GND") (at 68.58 54.61 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid da09d851-0abb-4d23-b8cc-91e95c01db1d)
-    (property "Reference" "#PWR07" (at 62.23 54.61 0)
+    (property "Reference" "#PWR?" (at 62.23 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 64.77 54.61 90)
@@ -3171,12 +3353,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -3185,7 +3367,7 @@
   (symbol (lib_id "power:GND") (at 86.36 81.28 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dda9c27e-9226-4652-8398-e4ca5b3db445)
-    (property "Reference" "#PWR01" (at 92.71 81.28 0)
+    (property "Reference" "#PWR?" (at 92.71 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 88.9 81.28 90)
@@ -3201,12 +3383,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -3215,7 +3397,7 @@
   (symbol (lib_id "Device:R_Small") (at 34.29 120.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e67691e3-38c6-49f5-ba99-0b90e32c3ab3)
-    (property "Reference" "R2" (at 34.29 115.57 90)
+    (property "Reference" "R?" (at 34.29 115.57 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1Mohm" (at 34.29 118.11 90)
@@ -3232,12 +3414,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "R2") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "R2") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -3246,7 +3428,7 @@
   (symbol (lib_id "power:+3.3V") (at 71.12 86.36 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e8cee2ce-046f-4dba-9596-676c880a0ca3)
-    (property "Reference" "#PWR08" (at 67.31 86.36 0)
+    (property "Reference" "#PWR?" (at 67.31 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 74.93 86.36 90)
@@ -3262,12 +3444,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -3276,7 +3458,7 @@
   (symbol (lib_id "Device:R_Small") (at 83.82 81.28 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ea268a5d-58ba-4108-be0e-1a973bf91a85)
-    (property "Reference" "R1" (at 83.82 86.36 90)
+    (property "Reference" "R?" (at 83.82 86.36 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1Mohm" (at 83.82 80.01 90)
@@ -3293,12 +3475,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "R1") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -3307,7 +3489,7 @@
   (symbol (lib_id "power:GND") (at 82.55 113.03 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid eb6d167f-6de1-4145-82a0-b95bf7fe5a53)
-    (property "Reference" "#PWR05" (at 76.2 113.03 0)
+    (property "Reference" "#PWR?" (at 76.2 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 78.74 113.03 90)
@@ -3323,12 +3505,12 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -3337,13 +3519,13 @@
   (symbol (lib_id "Connector:USB_C_Receptacle_USB2.0") (at 111.76 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f7cf768b-8693-4db5-9b98-452d997aa1e2)
-    (property "Reference" "J1" (at 111.76 40.64 0)
+    (property "Reference" "J?" (at 111.76 40.64 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "USB_C_Receptacle_USB2.0" (at 111.76 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4110" (at 115.57 63.5 0)
+    (property "Footprint" "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A" (at 115.57 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 115.57 63.5 0)
@@ -3369,42 +3551,42 @@
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "J1") (unit 1)
+          (reference "J?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "J1") (unit 1)
+          (reference "J5") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:+3.3V") (at 267.97 121.92 180) (unit 1)
+  (symbol (lib_id "power:+3.3V") (at 262.89 127 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f8bef005-7916-49e3-b0c0-33853aae831e)
-    (property "Reference" "#PWR012" (at 267.97 118.11 0)
+    (property "Reference" "#PWR?" (at 262.89 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3.3V" (at 267.97 127 0)
+    (property "Value" "+3.3V" (at 262.89 132.08 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 267.97 121.92 0)
+    (property "Footprint" "" (at 262.89 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 267.97 121.92 0)
+    (property "Datasheet" "" (at 262.89 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid afe96062-faf1-4e8c-b3e3-1d9f1a22631d))
     (instances
       (project "lidar"
         (path "/2624fe18-dd3c-43e6-b135-e885653f3dbb"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
-      (project "lidar 2"
+      (project "lidar 2 round"
         (path "/dd34a7c1-47d4-480b-86be-f1ea16fc4df3"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
     )
